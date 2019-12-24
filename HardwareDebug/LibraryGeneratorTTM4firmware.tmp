@@ -1,0 +1,6 @@
+-isa=rxv1
+-nofpu
+-lang=c
+-head=runtime,stdio,stdlib,string,new
+-output="TTM4firmware.lib"
+-nologo

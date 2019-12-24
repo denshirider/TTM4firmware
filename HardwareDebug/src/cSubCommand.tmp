@@ -1,0 +1,11 @@
+-isa=rxv1
+-nofpu
+-include="C:\Program Files (x86)\Renesas\RX\3_1_0\include","C:\Users\hamakita\e2_studio\workspace\TTM4firmware\generate"
+-lang=c
+-utf8
+-nomessage
+-output=obj
+-obj_path="src"
+-debug
+-outcode=utf8
+-nologo 

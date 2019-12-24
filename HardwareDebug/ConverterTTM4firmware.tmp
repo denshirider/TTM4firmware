@@ -1,0 +1,5 @@
+-form=stype
+-output="TTM4firmware.mot"
+-byte_count=10
+-nologo
+-nomessage

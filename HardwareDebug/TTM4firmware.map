@@ -1,0 +1,88 @@
+Renesas Optimizing Linker (W3.01.00 )             05-Sep-2019 01:48:22
+
+*** Options ***
+
+-subcommand=LinkerTTM4firmware.tmp
+-input=".\generate\dbsct.obj"
+-input=".\generate\hwsetup.obj"
+-input=".\generate\intprg.obj"
+-input=".\generate\resetprg.obj"
+-input=".\generate\sbrk.obj"
+-input=".\generate\vecttbl.obj"
+-input=".\src\E2ROM.obj"
+-input=".\src\I2C.obj"
+-input=".\src\MCP23017.obj"
+-input=".\src\SevenSegment.obj"
+-input=".\src\TTM4firmware.obj"
+-input=".\src\interface.obj"
+-input=".\src\queue.obj"
+-library=".\TTM4firmware.lib"
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,PIntPRG,P/0FFFC0000,FIXEDVECT/0FFFFFF80
+-output="TTM4firmware.abs"
+-form=absolute
+-nomessage
+-list=TTM4firmware.map
+-nooptimize
+-rom=D=R,D_1=R_1,D_2=R_2
+-cpu=RAM=00000000-00003fff,FIX=00080000-00083fff,FIX=00086000-00087fff,FIX=00088000-0008dfff,FIX=00090000-0009ffff,FIX=000a0000-000bffff,FIX=000c0000-000fffff,ROM=00100000-00101fff,FIX=007fc000-007fc4ff,FIX=007ffc00-007fffff,ROM=fffc0000-ffffffff
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00000103       100   4
+SI
+                                  00000104  00000403       300   4
+B_1
+                                  00000404  00000404         0   1
+R_1
+                                  00000404  00000465        62   1
+B_2
+                                  00000466  00000466         0   1
+R_2
+                                  00000466  00000667       202   2
+B
+                                  00000668  00000a73       40c   4
+R
+                                  00000a74  00000d53       2e0   4
+PResetPRG
+                                  fffc0000  fffc0034        35   1
+C_1
+                                  fffc0035  fffc0124        f0   1
+C_2
+                                  fffc0126  fffc0327       202   2
+C
+                                  fffc0328  fffc038f        68   4
+C$DSEC
+                                  fffc0390  fffc03b3        24   4
+C$BSEC
+                                  fffc03b4  fffc03cb        18   4
+C$INIT
+                                  fffc03cc  fffc03cc         0   1
+C$VECT
+                                  fffc03cc  fffc07cb       400   4
+C$VTBL
+                                  fffc07cc  fffc07cc         0   1
+D
+                                  fffc07cc  fffc0aab       2e0   4
+D_1
+                                  fffc0aac  fffc0b0d        62   1
+D_2
+                                  fffc0b0e  fffc0d0f       202   2
+W
+                                  fffc0d10  fffc0d10         0   4
+W_1
+                                  fffc0d10  fffc0d10         0   1
+W_2
+                                  fffc0d10  fffc0d4f        40   2
+L
+                                  fffc0d50  fffc0e04        b5   4
+PIntPRG
+                                  fffc0e05  fffc1135       331   1
+P
+                                  fffc1136  fffc4a6c      3937   1
+FIXEDVECT
+                                  ffffff80  ffffffff        80   4
